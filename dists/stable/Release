@@ -1,24 +1,28 @@
-Date: Wed, 27 Aug 2025 19:33:14 +0000
+Codename: stable
+Date: Wed, 27 Aug 2025 19:42:04 +0000
+Label: Android-Studio
+Origin: AssassinGhost
+Suite: stable
 MD5Sum:
- 940202f80c1df46443015ed4071113a0               38 Release
+ df588e770c3cd0c4c47618e5fab0fe48              113 Release
  c3305ac101ea05efa32bc7d5fe6dd0ed             1527 main/binary-all/Packages
  dd2bb30cf2b5e2418dd1ec26b179d77f              898 main/binary-all/Packages.gz
  c3305ac101ea05efa32bc7d5fe6dd0ed             1527 main/binary-arm/Packages
  dd2bb30cf2b5e2418dd1ec26b179d77f              898 main/binary-arm/Packages.gz
 SHA1:
- b68ebbfde51a7cd2f62a5b39a8fac94549e3fdd6               38 Release
+ fb28ab54a8831ae3a57b39d2df461f5096bdb707              113 Release
  03534635d722f71880b364f1bebc0ab358e04324             1527 main/binary-all/Packages
  e4d00b2bd10d3ce49f8147292529ff78aecfae58              898 main/binary-all/Packages.gz
  03534635d722f71880b364f1bebc0ab358e04324             1527 main/binary-arm/Packages
  e4d00b2bd10d3ce49f8147292529ff78aecfae58              898 main/binary-arm/Packages.gz
 SHA256:
- 1df73187b941f037a5ce5f4df7a2dce46eab13db53084f3efc2fa38029104361               38 Release
+ a32658ff9381ad313ecd177292e9b16f32cd449f8e17de4abaa210fe24de0a53              113 Release
  da6878417b6fb6fd3110b5013338734da08cf175c21629c2fe0ee2fef3b3278e             1527 main/binary-all/Packages
  eec0cb4d91d050414b634536fd1a73185620a72a3f635bb7085f5dfd9381386f              898 main/binary-all/Packages.gz
  da6878417b6fb6fd3110b5013338734da08cf175c21629c2fe0ee2fef3b3278e             1527 main/binary-arm/Packages
  eec0cb4d91d050414b634536fd1a73185620a72a3f635bb7085f5dfd9381386f              898 main/binary-arm/Packages.gz
 SHA512:
- a6d627fb7bdff15207923752d1a04aefd66fde2fe0d54598c1252cb244138c600f2cf9a1a1047fa7264fa1c3143b171367ae59f06c89ff485feec9e8296ca7e5               38 Release
+ b6196fc6088d81a9df4add3988ceb8362f878e6bd2d7934920708d71608b345cacf8d1b9cdc91b380e52047a4f06809e2356c1553f79893a0f57eb986f156915              113 Release
  6f08fb00045d17db26ddb49e5090921c4d03b0eac04cb6bafbe8b28b15b991c990db5747930bf600797395a13b3dcb29d3d3228455278485b86266c7bd2d1e2e             1527 main/binary-all/Packages
  315ec7b514eaab18b2edd34a5b1383630c4f6dd8917a9b74b0e2befa2e9365d8e25a7a6b7e36d62403463fb20b43f88f5bb7f9aa82289b7ca5fe947c6d6e4127              898 main/binary-all/Packages.gz
  6f08fb00045d17db26ddb49e5090921c4d03b0eac04cb6bafbe8b28b15b991c990db5747930bf600797395a13b3dcb29d3d3228455278485b86266c7bd2d1e2e             1527 main/binary-arm/Packages
