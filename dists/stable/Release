@@ -1,31 +1,32 @@
-Architectures: all
+Architectures: all arm
 Codename: stable
 Components: main
-Date: Wed, 27 Aug 2025 06:53:47 +0000
-Label: AndroidIDE-Fork
-Origin: AssassinGhost AndroidIDE Fork
+Date: Wed, 27 Aug 2025 11:49:40 +0000
+Description: Custom repo for AndroidIDE Fork
+Label: AssassinGhost Repo
+Origin: AssassinGhost
 Suite: stable
 MD5Sum:
- 77b7f8e52d1b70728127e78a4b87176d              166 Release
- d41d8cd98f00b204e9800998ecf8427e                0 main/binary-all/Packages
+ ab377679c65056a316a3e21c58ed8ebd              202 Release
+ d85184478f86b1370d1f7ea15b184ccd              251 main/binary-all/Packages
  36bb9525a763c3bbecee0a67f866193e               29 main/binary-all/Packages.gz
- b07c792349a23ffd791611fb8a73908a              163 main/binary-arm/Packages
+ 6fda7060d966e9db318646867bbb5046              237 main/binary-arm/Packages
  acb2a22f4ebc32956c2c6ef4784c9e5d              162 main/binary-arm/Packages.gz
 SHA1:
- ce9d96de8df42f3db5f9f76f911d6076e4b4a2ce              166 Release
- da39a3ee5e6b4b0d3255bfef95601890afd80709                0 main/binary-all/Packages
+ 20d87bb87bba7579f9a94e47e9f2cdb48fa6aa26              202 Release
+ e1719ccf0a4705013165ba4f3212b8fdafd2a3de              251 main/binary-all/Packages
  142a90ad015948f29234ddd42e1c943dd9a355d8               29 main/binary-all/Packages.gz
- 8202fc564c3904249732f5696f604f1fcb642631              163 main/binary-arm/Packages
+ d8c886883c65df14f83c692275722fd62e85698e              237 main/binary-arm/Packages
  c4941384acdfe9e15143519dcebd57ca94d12ec3              162 main/binary-arm/Packages.gz
 SHA256:
- 49427b08cfb6a91e157c890191a6d6ed16dc72a86017353fb94a0fa3bc82f70d              166 Release
- e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855                0 main/binary-all/Packages
+ 8830c06170fe8dd1f2792448a54126f04aa70c517beb0efc9c9e4157d143baa5              202 Release
+ 54ff0d6d312584eabef1439985f5f417c8ccb8a23e4b5f5a96c9495fd3f02c00              251 main/binary-all/Packages
  b40a2c70350da1fb0908db070b8370fc135b75b2ed4e1212a195722c7173f106               29 main/binary-all/Packages.gz
- 205deea184b303c89a9dacb167538e591e8a6eb3e61a23a778e1eba474345e26              163 main/binary-arm/Packages
+ 8b008f96621a650c66c9099e229ff36ea09eca862d2aba8c5d686725cb5df45e              237 main/binary-arm/Packages
  f53196256e139ab2b683758cb5dd1149f9b2f189fad2ddb91814dad61d065673              162 main/binary-arm/Packages.gz
 SHA512:
- 691ebaf50e8e8675e39100a81666a00448ca83a88f96c0c0ef095eee55ed3d6c73866e5dc043f56aadbe9670718d81eeae0bdea4c7f2d8f79e422bdb845a245c              166 Release
- cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e                0 main/binary-all/Packages
+ ea4e0579dc3629ecd246c570fbc4013b5f0157e157bfafb72e4321eea3ff3c28daa6987c602a975fe7ca6ecbf2a213e4a2858ac803c4324a3f4addcefb9aa955              202 Release
+ bd42ea23ecd5d6e19a719599f8694f1fd7e117873e722aac03372fd8b0ffe2bb964e2f7baa3fef07785d6d982ae0090ae95a6533aea70ca4576bd62aa3be37a0              251 main/binary-all/Packages
  e340f63340df9b50a5cd0c3b59b766cceb46cd3abd490e5c92fccdf18e45ae2b8e95d9cfc0d53f0d326c8f9152a5b954449ae6aa654ce82042a27a64b7d14b7c               29 main/binary-all/Packages.gz
- e3712bd701497b9e19866579df551a6712b67169424ead8d1a82b09d5680ec510dd61bfdf7576ba372c7d250783b82804f8af9e62221a97bf930e6ab8f9a01ad              163 main/binary-arm/Packages
+ a355c37200401bf58a0db82695be4b39f68ef5b0981e97ce803e9b8957d59b81d7943fd9be911404a459648030867ea1047ff85610c83dc6bae89cc75845ae26              237 main/binary-arm/Packages
  630d38338fdb5247a2a49f4d8c28279cf7c1c6d0bf3ac6bfeaa4401eca846fd80019956bd955d175eb7507a082baeacb01f22b85119f96ee0b71b485a64f0e33              162 main/binary-arm/Packages.gz
