@@ -2,21 +2,167 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>AssassinGhost Repo</title>
+  <title>Android Studio Mobile</title>
+  <style>
+    * {margin:0;padding:0;box-sizing:border-box;}
+    body {
+      font-family: Arial, sans-serif;
+      color: white;
+      text-align: center;
+      overflow-x: hidden;
+      background: black;
+    }
+
+    /* Fondo de estrellas + nebulosa */
+    #stars, #nebula {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      z-index: -2;
+    }
+    #nebula {
+      background: radial-gradient(circle at 20% 40%, rgba(255,0,255,0.3), transparent 60%),
+                  radial-gradient(circle at 80% 60%, rgba(0,255,255,0.25), transparent 70%),
+                  radial-gradient(circle at 50% 80%, rgba(0,0,255,0.2), transparent 60%);
+      animation: nebulaMove 15s infinite alternate;
+      z-index: -1;
+    }
+    @keyframes nebulaMove {
+      0% {background-position: 20% 40%, 80% 60%, 50% 80%;}
+      100% {background-position: 30% 50%, 70% 50%, 40% 70%;}
+    }
+
+    header {padding: 100px 20px;}
+    h1 {
+      font-size: 3.5em;
+      color: #ff00ff;
+      text-shadow: 0 0 20px #ff00ff, 0 0 40px #00ffff, 0 0 60px #ff00ff;
+      animation: glow 2s infinite alternate;
+    }
+    @keyframes glow {
+      from { text-shadow: 0 0 20px #ff00ff; }
+      to { text-shadow: 0 0 40px #00ffff, 0 0 60px #ff00ff; }
+    }
+
+    p {font-size: 1.2em; opacity: 0.8;}
+
+    .deb-info {
+      margin: 40px auto;
+      max-width: 700px;
+      background: rgba(0,0,0,0.6);
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 25px rgba(255,0,255,0.3);
+    }
+    pre {
+      background: rgba(255,255,255,0.1);
+      padding: 10px;
+      border-radius: 6px;
+      overflow-x: auto;
+    }
+    .deb-list {margin-top: 20px;text-align: left;}
+    .deb-list a {
+      display: block;
+      padding: 10px;
+      margin: 5px 0;
+      background: rgba(255,255,255,0.1);
+      border-radius: 6px;
+      color: #00ffff;
+      text-decoration: none;
+      transition: 0.2s;
+    }
+    .deb-list a:hover {
+      background: rgba(0,255,255,0.2);
+      transform: scale(1.05);
+    }
+  </style>
 </head>
 <body>
-  <h1>Repositorio APT - AssassinGhost</h1>
-  <p>Este es tu repo personalizado para AndroidIDE/Termux.</p>
+  <!-- Capas animadas -->
+  <canvas id="stars"></canvas>
+  <div id="nebula"></div>
 
-  <h2>Agregar a sources.list</h2>
-  <pre>
-deb [trusted=yes] https://assassinghostfit.github.io/Android-Studio stable main
-  </pre>
+  <header>
+    <h1>ANDROID STUDIO MOBILE</h1>
+    <p>Tu repositorio APT para AndroidIDE / Termux</p>
+  </header>
 
-  <h2>Directorios</h2>
-  <ul>
-    <li><a href="dists/">dists/</a></li>
-    <li><a href="pool/">pool/</a></li>
-  </ul>
+  <section class="deb-info">
+    <h2>Agrega a tu <code>sources.list</code></h2>
+    <pre>deb [trusted=yes] https://assassinghostfit.github.io/Android-Studio stable main</pre>
+
+    <h2>Paquetes disponibles (.deb)</h2>
+    <div class="deb-list" id="deb-list">
+      Cargando paquetes...
+    </div>
+  </section>
+
+  <script>
+    // Estrellas en movimiento
+    const canvas = document.getElementById("stars");
+    const ctx = canvas.getContext("2d");
+    let stars = [];
+
+    function resizeCanvas() {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    }
+    window.addEventListener("resize", resizeCanvas);
+    resizeCanvas();
+
+    function createStars(count) {
+      stars = [];
+      for (let i = 0; i < count; i++) {
+        stars.push({
+          x: Math.random() * canvas.width,
+          y: Math.random() * canvas.height,
+          radius: Math.random() * 1.5,
+          speed: Math.random() * 0.5 + 0.2
+        });
+      }
+    }
+    createStars(200);
+
+    function animateStars() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      ctx.fillStyle = "white";
+      stars.forEach(star => {
+        ctx.beginPath();
+        ctx.arc(star.x, star.y, star.radius, 0, Math.PI * 2);
+        ctx.fill();
+        star.y += star.speed;
+        if (star.y > canvas.height) {
+          star.y = 0;
+          star.x = Math.random() * canvas.width;
+        }
+      });
+      requestAnimationFrame(animateStars);
+    }
+    animateStars();
+
+    // Listar paquetes .deb desde /pool/
+    async function loadDebs() {
+      try {
+        let res = await fetch('./pool/');
+        let text = await res.text();
+        let parser = new DOMParser();
+        let htmlDoc = parser.parseFromString(text, 'text/html');
+        let links = htmlDoc.querySelectorAll('a');
+        let listDiv = document.getElementById('deb-list');
+        listDiv.innerHTML = '';
+        links.forEach(link => {
+          if (link.href.endsWith('.deb')) {
+            let a = document.createElement('a');
+            a.href = link.href;
+            a.textContent = link.textContent;
+            listDiv.appendChild(a);
+          }
+        });
+      } catch (e) {
+        document.getElementById('deb-list').innerText = 'Error cargando paquetes.';
+      }
+    }
+    loadDebs();
+  </script>
 </body>
 </html>
