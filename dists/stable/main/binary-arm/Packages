@@ -1,0 +1,5 @@
+Package: hello-termux
+Version: 1.0
+Architecture: all
+Maintainer: AssassinGhost <assassinghost0@gmail.com>
+Description: Paquete de prueba para repo AndroidIDE Fork

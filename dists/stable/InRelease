@@ -1,0 +1,51 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+Architectures: all
+Codename: stable
+Components: main
+Date: Wed, 27 Aug 2025 06:53:47 +0000
+Label: AndroidIDE-Fork
+Origin: AssassinGhost AndroidIDE Fork
+Suite: stable
+MD5Sum:
+ 77b7f8e52d1b70728127e78a4b87176d              166 Release
+ d41d8cd98f00b204e9800998ecf8427e                0 main/binary-all/Packages
+ 36bb9525a763c3bbecee0a67f866193e               29 main/binary-all/Packages.gz
+ b07c792349a23ffd791611fb8a73908a              163 main/binary-arm/Packages
+ acb2a22f4ebc32956c2c6ef4784c9e5d              162 main/binary-arm/Packages.gz
+SHA1:
+ ce9d96de8df42f3db5f9f76f911d6076e4b4a2ce              166 Release
+ da39a3ee5e6b4b0d3255bfef95601890afd80709                0 main/binary-all/Packages
+ 142a90ad015948f29234ddd42e1c943dd9a355d8               29 main/binary-all/Packages.gz
+ 8202fc564c3904249732f5696f604f1fcb642631              163 main/binary-arm/Packages
+ c4941384acdfe9e15143519dcebd57ca94d12ec3              162 main/binary-arm/Packages.gz
+SHA256:
+ 49427b08cfb6a91e157c890191a6d6ed16dc72a86017353fb94a0fa3bc82f70d              166 Release
+ e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855                0 main/binary-all/Packages
+ b40a2c70350da1fb0908db070b8370fc135b75b2ed4e1212a195722c7173f106               29 main/binary-all/Packages.gz
+ 205deea184b303c89a9dacb167538e591e8a6eb3e61a23a778e1eba474345e26              163 main/binary-arm/Packages
+ f53196256e139ab2b683758cb5dd1149f9b2f189fad2ddb91814dad61d065673              162 main/binary-arm/Packages.gz
+SHA512:
+ 691ebaf50e8e8675e39100a81666a00448ca83a88f96c0c0ef095eee55ed3d6c73866e5dc043f56aadbe9670718d81eeae0bdea4c7f2d8f79e422bdb845a245c              166 Release
+ cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e                0 main/binary-all/Packages
+ e340f63340df9b50a5cd0c3b59b766cceb46cd3abd490e5c92fccdf18e45ae2b8e95d9cfc0d53f0d326c8f9152a5b954449ae6aa654ce82042a27a64b7d14b7c               29 main/binary-all/Packages.gz
+ e3712bd701497b9e19866579df551a6712b67169424ead8d1a82b09d5680ec510dd61bfdf7576ba372c7d250783b82804f8af9e62221a97bf930e6ab8f9a01ad              163 main/binary-arm/Packages
+ 630d38338fdb5247a2a49f4d8c28279cf7c1c6d0bf3ac6bfeaa4401eca846fd80019956bd955d175eb7507a082baeacb01f22b85119f96ee0b71b485a64f0e33              162 main/binary-arm/Packages.gz
+-----BEGIN PGP SIGNATURE-----
+
+iQJPBAEBCAA5FiEEvew4ynCJm7Yt8GnkARM26RINaRAFAmiuq8cbFIAAAAAABAAO
+bWFudTIsMi41KzEuMTEsMywyAAoJEAETNukSDWkQ7EEP+gMF9s6w6RDMSTpGJb/l
+xXH/BuFTQb/b03OWeeXfXQrk6MvvxNzWPfa9fQCGwj3ELNiKdY7UNW1wwrApR7YA
+v+NVgqM3pupAgwpGg0COV/PyWbIX8R4CxzK3p8lZv7NYGYn8DTqsM4IeNg+oRWcE
+CVX2cc92DVjlAlxxnFzKrOfQDbf7YnD0rtrCGxXHSuEkd85mXJ40nAb1QTV+6V25
+HlWK+9IqiIwy39FJE2Yi64A4gw8pGYWyl4kV+uOfP0MrT4/shq//ueqZk1ZVJ9af
+3nekamR/RQbXTSGmlbiMYpj2NYMrZsMia53LL/s7iuuJmXUYFClPXTNoeKY5y22j
+ZoaNe2XdF7QvuK02rQCfb0xhZAovNcjhBcbQgCNwojrkFFXIr3BU+rb5WTpeOFBh
+gl6wIspsjT4MScbdDBh3yTHVR3k06qibczDw8hv6ug9a8Kja/MLu4K/ftDBVvf86
+hcpHl/2yZG/3+TPu0Ht5Xn8RS2FBqvBLrNHZZeZoYTbGPsKhXi+Ln8XP9TC7hyp8
+0zkaNoTecM/5PnS6pF+Svw+IoRXj0fBdnsBRIaVyh64Nz5Zh7PjT/ebFPqs9zlkz
+cMQDrXwIFEpe4m/kJePoFioQCZMLnWqTnsJo1uiR5MGMRtE3XOYc8g65pC0dsXPK
+vO5vMn8+LOXhfP8ucAb+WT1A
+=c5Rw
+-----END PGP SIGNATURE-----
