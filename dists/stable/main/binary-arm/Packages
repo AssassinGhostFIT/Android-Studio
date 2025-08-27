@@ -1,0 +1,12 @@
+Package: hello-termux
+Architecture: all
+Version: 1.0
+Maintainer: AssassinGhost <assassinghost0@gmail.com>
+Filename: dists/stable/main/binary-arm/debtest.deb
+Size: 864
+MD5sum: 8a8f667b6f07d17099a944db6374db1c
+SHA1: d460d74622d85573e499e74b87a1e654e7bee8bc
+SHA256: 109b983eb14da994aa45f40d5840e1e46a39a08e8d146971f9d0dd466d92e5d9
+SHA512: bc04eee6728b8007e6f9689db728286fe5e805108427674ed0ed1bf0f136f7d49a46612e0c8b71e05fb8e9a7971c5e70f6f4b5b1d4784ef58df2f54d3f1b8b1e
+Description: Paquete de prueba para repo AndroidIDE Fork
+

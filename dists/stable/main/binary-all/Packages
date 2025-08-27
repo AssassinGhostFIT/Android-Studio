@@ -1,0 +1,12 @@
+Package: assassinghost-new-owner-of-androidide
+Architecture: all
+Version: 1.0
+Maintainer: AssassinGhost <assassinghost0@gmail.com>
+Filename: dists/stable/main/binary-all/debtest.deb
+Size: 884
+MD5sum: 96d8a824f77840366ab56f44b388d6d9
+SHA1: 0a6447be67f9e10b9ff5209ee6e8d93c6a01e1ce
+SHA256: 3f5239a6cb6531c8e0d7b959dbc8233162187e60832b27c7410760d24ed3df85
+SHA512: 93a02853c8e443db6beaa686222acaeed69f9d6fc79322c040926ed2ea09dcee9f005d3fec134711f94a491f87fd57ea1ad8fa7550f4f954f2d026bd6e09e041
+Description: Nuevo Dueño de  AndroidIDE Fork
+
