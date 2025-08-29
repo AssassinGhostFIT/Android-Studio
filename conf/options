@@ -1,0 +1,9 @@
+Dir {
+  ArchiveDir ".";
+};
+
+Default {
+  Packages::Compress ". gzip bzip2 xz";
+  Sources::Compress ". gzip bzip2 xz";
+  Contents::Compress ". gzip bzip2 xz";
+};

@@ -1,6 +1,7 @@
 Origin: AssassinGhost
-Label: AssassinGhost
+Label: AssassinGhost Repo
 Codename: stable
 Architectures: all
 Components: main
-SignWith: yes
+Description: Repo  de AssassinGhost para Termux
+SignWith: BDEC38CA70899BB62DF069E4011336E9120D6910
