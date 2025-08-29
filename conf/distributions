@@ -1,8 +1,6 @@
 Origin: AssassinGhost
 Label: AssassinGhost
-Suite: stable
 Codename: stable
-Version: 1.0
 Architectures: all
 Components: main
-Description: AssassinGhost AndroidIDE Repository
+SignWith: yes
