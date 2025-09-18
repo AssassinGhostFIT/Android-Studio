@@ -2,39 +2,103 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Android Studio Mobile</title>
+  <title>Para Ana Del Carmen Ríos</title>
   <style>
-    * {margin:0;padding:0;box-sizing:border-box;}
     body {
-      font-family: Arial, sans-serif;
-      color: white;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #ffdee9, #b5fffc);
+      font-family: 'Segoe UI', sans-serif;
+      overflow: hidden;
+      color: #333;
       text-align: center;
-      overflow-x: hidden;
-      background: black;
     }
 
-    /* Fondo de estrellas + nebulosa */
-    #stars, #nebula {
-      position: fixed;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      z-index: -2;
-    }
-    #nebula {
-      background: radial-gradient(circle at 20% 40%, rgba(255,0,255,0.3), transparent 60%),
-                  radial-gradient(circle at 80% 60%, rgba(0,255,255,0.25), transparent 70%),
-                  radial-gradient(circle at 50% 80%, rgba(0,0,255,0.2), transparent 60%);
-      animation: nebulaMove 15s infinite alternate;
-      z-index: -1;
-    }
-    @keyframes nebulaMove {
-      0% {background-position: 20% 40%, 80% 60%, 50% 80%;}
-      100% {background-position: 30% 50%, 70% 50%, 40% 70%;}
-    }
-
-    header {padding: 100px 20px;}
     h1 {
-      font-size: 3.5em;
+      margin-top: 50px;
+      font-size: 2.5em;
+      animation: fadeIn 3s ease-in-out;
+    }
+
+    p {
+      font-size: 1.2em;
+      margin: 20px;
+      animation: fadeIn 4s ease-in-out;
+    }
+
+    .gallery {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      animation: fadeIn 5s ease-in-out;
+    }
+
+    .gallery img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      margin: 10px;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      transition: transform 0.5s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.1);
+    }
+
+    .heart {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: url('https://i.imgur.com/3GvwNBf.png') no-repeat center;
+      background-size: contain;
+      animation: fall 6s linear infinite;
+    }
+
+    @keyframes fall {
+      0% { top: -50px; opacity: 1; }
+      100% { top: 100vh; opacity: 0; }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Ana Del Carmen Ríos</h1>
+  <p>Dame tiempo para recuperarte... Quiero irme de viaje contigo por todo el mundo 🌍<br>
+     Para vivir contigo todos esos momentos que aún nos esperan 💖</p>
+
+  <div class="gallery">
+    <!-- Reemplaza estas imágenes con tus propias fotos -->
+    <img src="feliz1.jpg" alt="Momento feliz">
+    <img src="triste1.jpg" alt="Momento triste">
+    <img src="viaje.jpg" alt="Sueño de viaje">
+  </div>
+
+  <script>
+    // Generar lluvia de corazones
+    function createHeart() {
+      const heart = document.createElement('div');
+      heart.classList.add('heart');
+      heart.style.left = Math.random() * window.innerWidth + 'px';
+      document.body.appendChild(heart);
+
+      setTimeout(() => {
+        heart.remove();
+      }, 6000);
+    }
+
+    setInterval(createHeart, 300);
+  </script>
+
+</body>
+</html>      font-size: 3.5em;
       color: #ff00ff;
       text-shadow: 0 0 20px #ff00ff, 0 0 40px #00ffff, 0 0 60px #ff00ff;
       animation: glow 2s infinite alternate;
